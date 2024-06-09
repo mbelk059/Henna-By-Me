@@ -101,11 +101,6 @@ img {
 }
 
 /* HERO */
-#hero {
-    background: url(assets/hero/header-bg.png);
-    background-position: center;
-    background-size: cover;
-}
 
 .btn-brand2 {
     background-color: #dc3a63;
