@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --c-dark: #212529;
+    --c-brand: #000000;  /* the nav bar links*/
+    --c-brand-light: #dc3a63;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: black;
+    --font-base: "JosefinSlab", ;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img {
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: #dc3a63
+}
+
+/* BTN */
+
+.btn {
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+}
+
+/* HERO */
+#hero {
+    background: url(/assets/header-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-brand2 {
+    background-color: #dc3a63;
+    border-color: #dc3a63;
+    color: rgb(0, 0, 0);
+}
+
+.btn-brand2:hover {
+    background-color: #E56283;
+    border-color: #E56283;
+}
+
+/* SECTION TITLE*/
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: #dc3a63;
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    font-size: 19px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* GALLERY */
+.gallery-item .iconbox {
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-550%, -50%);
+    opacity: 0;
+}
+
+.gallery-item:hover .iconbox {
+    opacity: 1;
+}
+
+/* REVIEW */
+.review-head {
+    position: relative;
+}
+
+/* TEAM */
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .team-member-content {
+    text-align: center;
+  }
+  
+  .team-member-content h4 {
+    margin-top: 15px;
+  }
+  
+  .team-member-content p {
+    margin-top: 10px;
+  }
+  
+/* CONTACT US */
+#contact {
+    position: relative;
+    z-index: 2;
+}
+
+#contact::after {
+    content: "";
+    width: 100%;
+    height: 70%;
+}
+
+#contact .form-control {
+    border-radius: 0;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--c-brand-light);
+}
+
+.no-margin {
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+.no-margin2 {
+    margin-top: -10px;
+}
+
+.move-text {
+    padding-right: 120px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 20px 0;
+  }
+  
+footer a {
+    color: white;
+    text-decoration: none;
+}
+  
+.footer-top .line {
+    width: 50px;
+    height: 2px;
+    background: white;
+    margin: 10px 0;
+}
+  
+.footer-top ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-top ul li {
+    margin-bottom: 8px;
+}
+  
+.footer-top ul li a {
+    color: white;
+}
+  
+.footer-top p, .footer-top h5 {
+    color: white;
+  }
+  
+.footer-top .ri-twitter-fill,
+.footer-top .ri-instagram-fill,
+.footer-top .ri-facebook-fill,
+.footer-top .ri-youtube-fill {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;}
+  
+.footer-top .ri-twitter-fill:hover,
+.footer-top .ri-instagram-fill:hover,
+.footer-top .ri-facebook-fill:hover,
+.footer-top .ri-youtube-fill:hover {
+    color: #ccc;
+}
+  
